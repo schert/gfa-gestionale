@@ -21,16 +21,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.reactive.function.client.WebClient;
 
-/**
- * JoinFaces Example Configuration class.
- * @author Marcelo Fernandes
- */
 @SpringBootApplication
 public class GfaGestionaleApplication {
 
-	/**
-	* Main method.
-	*/
 	public static void main(String[] args) {
 		SpringApplication.run(GfaGestionaleApplication.class, args);
 	}

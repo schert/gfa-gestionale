@@ -1,5 +1,7 @@
-server:
-  port: 8080
+server.port: 8082
+pod.name: NOME_POD_TEST_SVIL  
+spring.application.name: gfa-gestionale
+gateway.host: "http://127.0.0.1:9090"
 
 joinfaces:
   jsf:
@@ -22,20 +24,12 @@ application-users:
       password: qwe
       authorities: ROLE_USER
       
-pod:
-  name: NOME_POD_TEST_SVIL
-  
-spring:
-  application:
-    name: gestionale
-    
-logging:
-  level:
-    org:
-      springframework:
-        web:
-          servlet:
-            DispatcherServlet: TRACE
-
-test:
-  host: "localhost:9090"
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web:
+#          servlet:
+#            DispatcherServlet: TRACE
+#        cloud:
+#          kubernetes: DEBUG

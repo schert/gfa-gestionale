@@ -28,11 +28,6 @@ import org.ocpsoft.rewrite.servlet.config.Redirect;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.ApplicationScope;
 
-/**
- * Redirect to index.jsf SPA.
- *
- * @author Marcelo Fernandes
- */
 @Component
 @ApplicationScope
 public class RedirectToIndexConfigurationProvider extends HttpConfigurationProvider {

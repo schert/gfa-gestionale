@@ -21,10 +21,6 @@ import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * User Credentials.
- * @author Marcelo Fernandes
- */
 @Getter
 @Setter
 public class UserCredentials {

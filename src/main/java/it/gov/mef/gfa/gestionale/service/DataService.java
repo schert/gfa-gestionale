@@ -18,12 +18,12 @@ public class DataService {
 	@Autowired
 	private WebClient.Builder webclientBuilder;
 	
-	@Value("${test.host}")
+	@Value("${gateway.host}")
 	private String hostTest;
 
 	public Map<Integer, Double> getLineChartData() {
 		
-		logger.info("Call getLineChartData");
+		logger.info("Call getLineChartData: "+hostTest+"/test/api/v1/mapTest");
 
 		Map<Integer, Double> map = webclientBuilder.build().get().uri(hostTest+"/test/api/v1/mapTest").retrieve()
 				.bodyToMono(new ParameterizedTypeReference<Map<Integer, Double>>() {}).block();
